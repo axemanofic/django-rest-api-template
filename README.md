@@ -1,7 +1,5 @@
 # django-rest-api-template
 
----
-
 > A template with "basic" (in my personal opinion) dependencies, for developing a REST API on the Django framework.
 
 ## Content
@@ -23,8 +21,6 @@
 | [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/index.html) | ^1.20.0 |
 
 ## Install Poetry
-
----
 
 ### osx / linux / bashonwindows install instructions
 
