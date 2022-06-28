@@ -19,8 +19,16 @@ from django.urls import path, include
 from .yasg import urlpatterns as yasg_pattern
 
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
+class PingView(APIView):
+    def get(self, request):
+        return Response({"status": "pong"})
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ping/', PingView.as_view()),
 ]
 
 urlpatterns += yasg_pattern
